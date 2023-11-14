@@ -12,6 +12,8 @@ int print_percent(void);
 int _strlen(char *s);
 int _strlenc(const char *s);
 int _putchar(char c);
+int print_i(va_list args);
+int print_d(va_list args);
 int _printf(const char *format, ...);
 typedef struct format
 {

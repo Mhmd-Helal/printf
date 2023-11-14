@@ -11,7 +11,8 @@ int _printf(const char *format, ...)
 {
 	print m[] = {
 		{"%s", print_str}, {"%c", print_c},
-		{"%%", print_percent}, {NULL, NULL}
+		{"%%", print_percent}, {"%i", print_i},
+		{"%d", print_d }, {NULL, NULL}
 	};
 	int i = 0;
 	int j;
