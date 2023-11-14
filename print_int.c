@@ -20,7 +20,7 @@ int print_i(va_list args)
  *@args: arguments
  *Return: 2
  */
-int print_d(va_list args);
+int print_d(va_list args)
 {
 	int n, last, num;
 
