@@ -13,7 +13,7 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- *_strlen - gets num of char in string
+ *_strlenc - gets num of char in string
  *@s: const char of string to get num
  *Return: len of charachter
  */
