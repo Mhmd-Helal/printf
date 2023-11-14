@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	print m[] = {
 		{"%s", print_str}, {"%c", print_c},
-		{"%%", print_percent}
+		{"%%", print_percent}, {NULL, NULL}
 	};
 	int i = 0;
 	int j;
@@ -25,8 +25,8 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 13;
-		while (j >= 0)
+		j = 0;
+		while (m[j].f != NULL)
 		{
 			if (m[j].c[0] == format[i] && m[j].c[1] == format[i + 1])
 			{
@@ -34,7 +34,7 @@ Here:
 				i = i + 2;
 				goto Here;
 			}
-			j--;
+			j++;
 		}
 		_putchar(format[i]);
 		len++;
