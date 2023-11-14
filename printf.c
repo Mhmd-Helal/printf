@@ -3,10 +3,9 @@
 #include <stdarg.h>
 #include "main.h"
 /**
- *
- *
- *
- *
+ *_printf - print all
+ *@format: is a character string
+ *Return: len of string that print
  */
 int _printf(const char *format, ...)
 {
