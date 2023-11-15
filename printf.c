@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 		{"%%", print_percent}, {"%i", print_i},
 		{"%d", print_d}, {"%b", print_b},
 		{"%u", print_u}, {"%o", print_o},
-		{"%x", print_x}, {"%X", print_X}, {NULL, NULL}
+		{NULL, NULL}
 	};
 	int i = 0;
 	int j;
