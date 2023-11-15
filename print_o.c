@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *print_b - convert dec to bin
+ *print_o - convert dec to octal
  *@args: arguments
  *Return: len of bin
  */
-int print_b(va_list args)
+int print_o(va_list args)
 {
 	unsigned int n;
 	int remendir[100];
@@ -20,8 +20,8 @@ int print_b(va_list args)
 	}
 	while (n != 0)
 	{
-		remendir[i] = n % 2;
-		n = n / 2;
+		remendir[i] = n % 8;
+		n = n / 8;
 		i++;
 	}
 	for (j = i - 1; j >= 0; j--)

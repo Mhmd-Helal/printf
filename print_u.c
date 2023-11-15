@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_i - print intger
+ *print_u - print unsigned intger
  *@args: arguments
  *Return: len of num
  */
