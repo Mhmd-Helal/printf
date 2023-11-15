@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	print m[] = {
 		{"%s", print_str}, {"%c", print_c},
 		{"%%", print_percent}, {"%i", print_i},
-		{"%d", print_d }, {"%b", print_b}, {NULL, NULL}
+		{"%d", print_d }, {"%b", print_b}, {"%u", print_u }, {NULL, NULL}
 	};
 	int i = 0;
 	int j;
