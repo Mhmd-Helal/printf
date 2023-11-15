@@ -21,12 +21,12 @@ int print_x(va_list args)
 	while (n != 0)
 	{
 		remendir[i] = n % 16;
-		switch (remendir[i] > 9 && remendir[i] <= 15)
+		switch (remendir[i])
 		{
 			case 10:
 				remendir[i] = 'a';
 				break;
-			case 11;
+			case 11:
 				remendir[i] = 'b';
 				break;
 			case 12:
@@ -47,7 +47,10 @@ int print_x(va_list args)
 	}
 	for (j = i - 1; j >= 0; j--)
 	{
-		_putchar(remendir[j] + '0');
+		if (remendir[j] <= 9)
+			_putchar(remendir[j] + '0');
+		else
+			_putchar(remendir[i]);
 		count++;
 	}
 	return (count);
