@@ -24,5 +24,10 @@ int print_b(va_list args)
 		_putchar(remendir[j] + '0');
 		count++;
 	}
+	if (n == 0)
+	{
+		_putchar('0');
+		count++;
+	}
 	return (count);
 }
