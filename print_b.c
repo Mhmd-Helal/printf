@@ -10,7 +10,7 @@ int print_b(va_list args)
 	int remendir[100];
 	int i = 0;
 	int j;
-	int count;
+	int count = 0;
 
 	n = va_arg(args, int);
 	while (n != 0)
