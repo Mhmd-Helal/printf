@@ -13,7 +13,8 @@ int _printf(const char *format, ...)
 		{"%s", print_str}, {"%c", print_c},
 		{"%%", print_percent}, {"%i", print_i},
 		{"%d", print_d}, {"%b", print_b},
-		{"%u", print_u}, {"%o", print_o}, {NULL, NULL}
+		{"%u", print_u}, {"%o", print_o},
+		{"%x", print_x}, {NULL, NULL}
 	};
 	int i = 0;
 	int j;
