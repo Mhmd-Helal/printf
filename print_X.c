@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *print_X - convert dec to HEX
+ *print_HEX - convert dec to HEX
  *@args: arguments
  *Return: len of HEX
  */
-int print_X(va_list args)
+int print_HEX(va_list args)
 {
 	unsigned int n;
 	int remendir[100];
