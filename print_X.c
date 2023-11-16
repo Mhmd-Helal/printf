@@ -24,22 +24,22 @@ int print_HEX(va_list args)
 		switch (remendir[i])
 		{
 			case 10:
-				remendir[i] = 'a';
+				remendir[i] = 'A';
 				break;
 			case 11:
-				remendir[i] = 'b';
+				remendir[i] = 'B';
 				break;
 			case 12:
-				remendir[i] = 'c';
+				remendir[i] = 'C';
 				break;
 			case 13:
-				remendir[i] = 'd';
+				remendir[i] = 'D';
 				break;
 			case 14:
-				remendir[i] = 'e';
+				remendir[i] = 'E';
 				break;
 			case 15:
-				remendir[i] = 'f';
+				remendir[i] = 'F';
 				break;
 		}
 		n = n / 16;
