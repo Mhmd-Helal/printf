@@ -19,6 +19,8 @@ int print_u(va_list args);
 int print_o(va_list args);
 int print_hex(va_list args);
 int print_HEX(va_list args);
+int print_S(va_list args);
+int print_HEX_X(unsigned int num);
 int _printf(const char *format, ...);
 typedef struct format
 {

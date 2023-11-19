@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
 		{"%d", print_d}, {"%b", print_b},
 		{"%u", print_u}, {"%o", print_o},
 		{"%x", print_hex}, {"%X", print_HEX},
+		{"%S", print_S},
 		{NULL, NULL}
 	};
 	int i = 0;
